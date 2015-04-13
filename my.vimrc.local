@@ -41,3 +41,6 @@ set softtabstop=4
 
 au BufNewFile,BufRead *.groovy setf groovy
 au BufNewFile,BufRead *.gradle setf groovy
+
+" plugin settings
+let g:gitgutter_enabled = 1
