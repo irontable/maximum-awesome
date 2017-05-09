@@ -2,6 +2,7 @@ set nocursorline " don't highlight current line
 
 " keyboard shortcuts
 inoremap jj <ESC>
+map <C-c> "+y
 
 " highlight search
 "set hlsearch
@@ -15,6 +16,13 @@ if (&t_Co == 256 || has('gui_running'))
     colorscheme desert
   endif
 endif
+
+set background=dark
+let g:solarized_termcolors = 256
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
+let g:solarized_diffmode = "high"
+colorscheme solarized
 
 " Disambiguate ,a & ,t from the Align plugin, making them fast again.
 "
