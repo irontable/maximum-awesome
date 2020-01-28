@@ -4,7 +4,12 @@ set cc=82
 
 " keyboard shortcuts
 inoremap jj <ESC>
+" map CTRL+c to copy
 map <C-c> "+y
+
+" highlight search
+"set hlsearch
+"nmap <leader>hl :let @/ = ""<CR>
 
 " gui settings
 if (&t_Co == 256 || has('gui_running'))
@@ -57,6 +62,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 "let g:syntastic_mode_map = { 'passive_filetypes': ['python'] }
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_python_checkers = ['flake8']
 
 " nathanaelkane/vim-indent-guides
 "let g:indent_guides_enable_on_vim_startup = 1
