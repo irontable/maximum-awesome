@@ -51,6 +51,7 @@ au BufNewFile,BufRead *.gradle setf groovy
 " PLUGIN SETTINGS
 " airblade/vim-gitgutter
 let g:gitgutter_enabled = 1
+autocmd BufWritePost * GitGutter  "update the signs when you save a file
 
 " scrooloose/syntastic
 set statusline+=%#warningmsg#
@@ -74,7 +75,7 @@ let g:syntastic_python_checkers = ['flake8']
 let g:jedi#auto_initialization = 0
 autocmd FileType python setlocal completeopt-=preview
 
-" bling/vim-airline
+" vim-airline/vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='light'
 
